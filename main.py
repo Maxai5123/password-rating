@@ -5,8 +5,7 @@ def get_password(password):
     return any(not symbol.isdigit() and symbol.isalpha() for symbol in password)
 
 def get_lenght(password):
-    if len(password) > 12:
-        return True
+    return len(password) > 12
     
 def has_leters_in_password(password):
     return any(symbol.isalpha() for symbol in password)
